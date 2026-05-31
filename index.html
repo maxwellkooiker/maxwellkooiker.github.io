@@ -6,6 +6,47 @@
     <title>Maxwell Kooiker</title>
 
     <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        
+            margin-bottom: 30px;
+            padding: 25px;
+        
+            background-color: #faf3f8;
+            border-radius: 12px;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
+        .profile-photo {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+        
+            border-radius: 50%;
+        
+            border: 4px solid #8B1E6B;
+        }
+        .cv-button {
+            display: inline-block;
+            background-color: #8B1E6B;
+            color: white !important;
+        
+            padding: 8px 16px;
+            border-radius: 6px;
+        
+            font-weight: bold;
+        }
+        
+        .cv-button:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
         body {
             max-width: 850px;
             margin: 40px auto;
@@ -17,18 +58,21 @@
 
         h1 {
             margin-bottom: 0;
+            color: #8B1E6B;
         }
-
+        
         h2 {
             margin-top: 35px;
-            border-bottom: 1px solid #ddd;
+            color: #8B1E6B;
+            border-bottom: 2px solid #8B1E6B;
             padding-bottom: 5px;
         }
 
         a {
+            color: #8B1E6B;
             text-decoration: none;
         }
-
+        
         a:hover {
             text-decoration: underline;
         }
@@ -41,6 +85,18 @@
         ul {
             padding-left: 20px;
         }
+        .lecture-block {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .lecture-photo {
+            width: 350px;
+            border-radius: 10px;
+            border: 3px solid #8B1E6B;
+        }
 
         .footer {
             margin-top: 50px;
@@ -51,19 +107,36 @@
 </head>
 <body>
 
-    <h1>Maxwell Kooiker</h1>
+<div class="header">
 
-    <div class="contact">
-        Ph.D. Student in Mathematics<br>
-        Claremont Graduate University<br>
-        John Angus Fellow (2026–2027)<br><br>
+    <div class="header-text">
 
-        Email:
-        <a href="mailto:maxwell.kooiker@cgu.edu">
-            maxwell.kooiker@cgu.edu
-        </a>
+        <h1>Maxwell Kooiker</h1>
+
+        <div class="contact">
+            Ph.D. Student in Mathematics<br>
+            Claremont Graduate University<br>
+            John Angus Fellow (2026–2027)<br><br>
+
+            Email:
+            <a href="mailto:maxwell.kooiker@cgu.edu">
+                maxwell.kooiker@cgu.edu
+            </a>
+            <br><br>
+        </div>
+
     </div>
 
+    <img src="profile.jpg"
+         alt="Maxwell Kooiker"
+         class="profile-photo">
+
+</div>
+    <h2>Curriculum Vitae</h2>
+
+    <p>
+        <a href="cv.pdf"> Curriculum Vitae</a>
+    </p>
     <h2>About</h2>
 
     <p>
@@ -99,12 +172,6 @@
         <li>Number Theory</li>
     </ul>
 
-    <h2>CV</h2>
-
-    <p>
-        <a href="cv.pdf"> Curriculum Vitae</a>
-    </p>
-
     <h2>Publications and Preprints</h2>
 
     <p>
@@ -112,6 +179,21 @@
             Kooiker, M.
         </a>
     </p>
+    <h2>Presentations</h2>
+
+        <div class="lecture-block">
+        
+            <img src="lecture.jpg"
+                 alt="Lecturing"
+                 class="lecture-photo">
+        
+            <div>
+                Recent presentations include talks at the Joint Mathematics Meetings,
+                AMS Undergraduate Presentations, and the San Marcos Informal Mathematics
+                In-Person Colloquium.
+            </div>
+        
+        </div>
 
     <div class="footer">
         Last updated: May 2026
